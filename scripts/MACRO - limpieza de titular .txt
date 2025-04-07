@@ -1,4 +1,4 @@
-Sub LimpiarTextoCelda()
+Sub LimpiarTitular()
     Dim celda As Range
     Dim texto As String
 
