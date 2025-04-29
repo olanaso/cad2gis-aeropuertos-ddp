@@ -72,21 +72,21 @@
       {
         nombre: "Aeropuerto Francisco Carlé",
         ciudad: "Jauja",
-        estadoMigracion: 95,
+        estadoMigracion: 90,
         url: "https://example.com/jauja",
         imagen: "https://cdn.www.gob.pe/uploads/document/file/7280124/1064620-formato-para-fotos-web-41.png"
       },
       {
         nombre: "Aeropuerto Armando Revoredo",
         ciudad: "Cajamarca",
-        estadoMigracion: 95,
-        url: "https://example.com/cajamarca",
+        estadoMigracion: 90,
+        url: "https://app.powerbi.com/view?r=eyJrIjoiYWUzNTIxMGItOGQ5YS00YTE5LWFjODAtMmQ4ZmE0YTIzMGFmIiwidCI6IjljOGE5OTkwLWI1ZTgtNDUwNC1iZWRjLTQyN2ZkYjgwZWZiOSIsImMiOjR9",
         imagen: "https://megaconstrucciones.net/images/aeropuertos/foto5/cajamarca-aeropuerto.jpg"
       },
       {
         nombre: "Capitán FAP David Abensur Rengifo",
         ciudad: "Pucallpa",
-        estadoMigracion: 42,
+        estadoMigracion: 90,
         url: "https://example.com/ayacucho",
         imagen: "https://media.viajando.travel/p/065234cbacd0faeb2c1a7a4ff3d30061/adjuntos/277/imagenes/000/276/0000276231/1200x675/smart/164739_aeropuertopucallpa_977761jpg.jpg"
       }
@@ -136,12 +136,9 @@
                 <span class="font-semibold ${colorClass}"> Avance: ${a.estadoMigracion}%</span>
               </p>
             </div>
-            <a href="${a.url}" target="_blank"
+            <a href="visualizar.html?reporte=${encodeURIComponent(a.url)}"
               class="mt-4 inline-flex items-center justify-center gap-2 w-full text-center bg-vino text-white text-xs sm:text-sm px-4 py-2 rounded hover:bg-red-600">
-              Ingresar
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
+              Ver tablero
             </a>
           </div>
         `;
